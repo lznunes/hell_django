@@ -20,4 +20,8 @@ from django.contrib import admin
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/<nome>/<int:idade>', views.hello),
+    path('soma/<int:numero1>/<int:numero2>/', views.soma),
+    path('subtracao/<int:numero1>/<int:numero2>/', views.subtracao),
+    path('multiplicacao/<int:numero1>/<int:numero2>/', views.multplicacao),
+    path('divisao/<int:numero1>/<int:numero2>/', views.divisao),
 ]
